@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 9</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <h1>Obra Social De Desarrolladores</h1>
+    <section>
+        <div>
+            <h4>Registro de OSDeDA (Obra Social De Desarrolladores)</h4>
+            <div class="div-h5">
+                <h5>
+                    Tel:<a href="tel:9703726385">9703726385</a>
+                </h5>
+                <h5>
+                    Email:<a href="mailto:contacto@osdeada.com">contacto@osdeada.com</a>
+                </h5>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26843.32708965606!2d-63.804991455272386!3d-32.75469763262198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdc60f6e3d0d7b%3A0x6e2ba3db90520593!2sGral.%20Deheza%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1684501803943!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form action="/show_data.html" method="get">
+            <fieldset class="f-1">
+                <legend>DATOS PERSONALES</legend>
+                <label for="name">NOMBRE COMPLETO</label>
+                <input type="text" id="name" placeholder="Nombre" name="Nombres">
+                <label for="name">APELLIDO</label>
+                <input type="text" id="name" placeholder="Apellido" name="Apellidos">
+                <label for="dni">DNI/CUIT</label>
+                <input type="text" id="dni" placeholder="DNI" name="DNI">
+            </fieldset>
+            <fieldset class="f-2">
+                <legend>TIPO DE COBERTURA</legend>
+                <label for="menu"></label>
+                <select name="Cobertura" id="menu">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="C">Completa</option>
+                    <option value="P-p">Pre-Paga</option>
+                </select>
+            </fieldset>
+            <fieldset class="f-3">
+                <Legend>INDICAR SEXO</Legend>
+                <label for="sexo">Hombre</label>
+                <input type="checkbox" id="sexo" name="H">
+                <label for="sexo">Mujer</label>
+                <input type="checkbox" id="sexo" name="M">
+                <label for="sexo">Otro</label>
+                <input type="checkbox" id="sexo" name="O">
+            </fieldset>
+            <input class="enviar" type="submit" value="ENVIAR">
+        </form>
+    </section>
+</body>
+
+</html>
